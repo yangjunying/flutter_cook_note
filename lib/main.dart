@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import './index_page.dart';
-import './page_router.dart';
+import './routes/page_router.dart';
 
 void main() => runApp(MyApp());
 

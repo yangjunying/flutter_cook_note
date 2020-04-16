@@ -1,15 +1,17 @@
 import 'package:flutter/material.dart';
 
-import './animate_container.dart';
-import './animate_opacity.dart';
-import './regular_font.dart';
-import './tabtontroller_demo.dart';
-import './theme_page.dart';
-import './darawer_page.dart';
-import './siderbar_page.dart';
-import './snackbar_page.dart';
-import './convex_bottom_navigation_demo.dart';
-import './convexbar/convex_bar_demo.dart';
+import '../animate_container.dart';
+import '../animate_opacity.dart';
+import '../regular_font.dart';
+import '../tabtontroller_demo.dart';
+import '../theme_page.dart';
+import '../darawer_page.dart';
+import '../siderbar_page.dart';
+import '../snackbar_page.dart';
+import '../convex_bottom_navigation_demo.dart';
+import '../convexbar/convex_bar_demo.dart';
+import '../tabbar_dock_top.dart';
+import '../OrientationBuilderDemo.dart';
 
 // import 'order.dart';
 
@@ -25,6 +27,8 @@ final List<Map<String,dynamic>> page_list = [
     {'title':'SnackBarDemo','router':'/SnackBarDemo'},
     {'title':'ConvexBottomNaviBar','router':'/ConvexBottomNaviBar'},
     {'title':'ConvexBarDemp','router':'/ConvexBarDemp'},
+    {'title':'TabBarDockTop','router':'/TabBarDockTop'},
+    {'title':'OrientationBuilderDemo','router':'/OrientationBuilderDemo'},
     // {'title':'container animation','router':'AnimatedContainerApp'},
     // {'title':'container animation','router':'AnimatedContainerApp'},
   ];
@@ -41,6 +45,8 @@ final Map<String, WidgetBuilder> page_route_table = {
   page_list[7]['router'] : (content) => SnackBarDemo(),
   page_list[8]['router'] : (content) => ConvexBottomNaviBar(),
   page_list[9]['router'] : (content) => ConvexBarDemp(),
+  page_list[10]['router'] : (content) => TabBarDockTop(),
+  page_list[11]['router'] : (content) => OrientationBuilderDemo(title: 'OrientationBuilderDemo',),
 };
 
 void navito(context, index,{args}) async {

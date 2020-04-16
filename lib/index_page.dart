@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import './page_router.dart';
+import './routes/page_router.dart';
 
 class IndexPage extends StatelessWidget{
 
